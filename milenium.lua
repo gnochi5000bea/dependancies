@@ -499,7 +499,7 @@
                 suffix = properties.suffix or properties.Suffix or "tech";
                 name = properties.name or properties.Name or "nebula";
                 game_name = properties.gameInfo or properties.game_info or properties.GameInfo or "Milenium for Counter-Strike: Global Offensive";
-				other_info = properties.otherInfo or properties.other_info or properties.OtherInfo or '<font color="rgb(72, 72, 73)">32 days left, </font>' .. cfg.name .. cfg.suffix;
+				other_info = properties.otherInfo or properties.other_info or properties.OtherInfo or '<font color="rgb(72, 72, 73)">32 days left, </font>';
                 size = properties.size or properties.Size or dim2(0, 700, 0, 565);
                 selected_tab;
                 items = {};
