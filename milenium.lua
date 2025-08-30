@@ -1,25 +1,15 @@
---[[
-
-    Milenium Library
-    -> Made by @finobe 
-    -> Kind of got bored idk what to do with life
-    -> Idk who or why this got leaked, ui was VERY popular and high in demand with customers
-]]
+local services = setmetatable({}, {__index = function(self, service)
+    return game:GetService(service)
+end})
 
 -- Variables 
-    local uis = game:GetService("UserInputService") 
-    local players = game:GetService("Players") 
-    local ws = game:GetService("Workspace")
-    local rs = game:GetService("ReplicatedStorage")
-    local http_service = game:GetService("HttpService")
-    local gui_service = game:GetService("GuiService")
-    local lighting = game:GetService("Lighting")
-    local run = game:GetService("RunService")
-    local stats = game:GetService("Stats")
-    local coregui = game:GetService("CoreGui")
-    local debris = game:GetService("Debris")
-    local tween_service = game:GetService("TweenService")
-    local sound_service = game:GetService("SoundService")
+    local uis = services["UserInputService"]
+    local players = services["Players"] 
+    local ws = services["Workspace"]
+    local http_service = services["HttpService"]
+    local gui_service = services["GuiService"]
+    local coregui = services["CoreGui"]
+    local tween_service = services["TweenService"]
 
     local vec2 = Vector2.new
     local vec3 = Vector3.new
